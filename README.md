@@ -1,48 +1,83 @@
 # 🎬 CineMatch
 
 A mood-based movie discovery web app powered by the TMDB API.
-Tell CineMatch how you're feeling — it finds the perfect movie for you.
+Tell CineMatch how you're feeling — it finds movies that match your mood instantly.
+
+---
 
 ## 🎯 Purpose
-CineMatch helps users discover movies based on their current mood.
-Instead of endlessly scrolling, users pick a mood (Happy, Sad, Thrilled,
-Romantic, etc.) and get curated movie recommendations with filtering
-and sorting options.
+
+CineMatch simplifies movie discovery by letting users explore films based on their current mood.
+Instead of endlessly scrolling, users can select a mood or search directly to get relevant movie suggestions.
+
+---
 
 ## 🌐 API Used
-- **The Movie Database (TMDB) API** — https://www.themoviedb.org/documentation/api
-- Provides movie data including titles, posters, ratings, genres,
-  and release dates.
 
-## ✨ Planned Features
-- 🎭 Mood-based movie recommendations (Happy, Sad, Adventurous, Romantic...)
-- 🔍 Search movies by title
-- 🎬 Filter by genre and language
-- ⭐ Sort by rating or release date
-- 📄 View detailed movie info (synopsis, cast, trailer link)
-- 🔖 Save favourite movies to a personal watchlist (localStorage)
+* **The Movie Database (TMDB) API**
+* Provides movie data including titles, posters, ratings, and release dates.
 
-## 🛠 Technologies
-- HTML5, CSS3, Vanilla JavaScript (ES6+)
-- TMDB REST API (fetch / async-await)
-- localStorage for saving favourites
+---
+
+## ✨ Features (Implemented)
+
+* 🎭 Mood-based movie recommendations (Happy, Sad, Thrilled, Romantic, etc.)
+* 🔍 Search movies by title
+* 🎬 Filter movies using mood (genre-based mapping)
+* ⭐ Sort movies by popularity, rating, or release date
+* 📱 Responsive UI (works on mobile, tablet, desktop)
+* ⚡ Dynamic API integration using `fetch` and async/await
+
+---
+
+## 🚧 Planned Improvements
+
+* 📄 Movie detail view (cast, synopsis, trailer)
+* 🔖 Watchlist feature using localStorage
+* 🎨 Improved loading and error UI
+
+---
+
+## 🛠 Technologies Used
+
+* HTML5
+* CSS3 (Responsive Design)
+* Vanilla JavaScript (ES6+)
+* TMDB REST API
+
+---
 
 ## 🚀 How to Run
+
 1. Clone this repository:
+
 ```bash
-   git clone https://github.com/YOUR_USERNAME/cinematch.git
+git clone https://github.com/dishaab03/cinematch.git
 ```
-2. Open `index.html` in your browser — no build step needed.
-3. Add your TMDB API key in `script.js` where indicated.
+
+2. Open the project folder
+
+3. Run using any of the following:
+
+* Double-click `index.html`
+* OR use VS Code Live Server (recommended)
+
+4. Add your TMDB API key in `script.js`
+
+---
 
 ## 📁 Project Structure
+
 ```
 cinematch/
-├── index.html      # Main UI structure
-├── style.css       # Styling
-├── script.js       # API calls and app logic
-└── README.md       # Project documentation
+├── index.html      # UI structure
+├── style.css       # Styling and responsiveness
+├── script.js       # API logic and dynamic rendering
+└── README.md       # Documentation
 ```
 
+---
+
 ## 📌 Current Status
-Milestone 1 — Project setup and planning complete.
+
+Milestone 2 — API integration and dynamic rendering completed.
