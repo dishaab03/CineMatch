@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_TMDB_API_KEY_HERE';
+const API_KEY = '8b134ed64706b1b9e90724db613b82b2';
 const BASE_URL = 'https://api.themoviedb.org/3';
 
 // grabbing all the elements i need from the page
