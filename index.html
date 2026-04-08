@@ -4,33 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CineMatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Mesh background for that "hatke" aesthetic -->
+  <div class="mesh-bg"></div>
+  <div class="mesh-blob"></div>
   <header>
     <h1>🎬 CineMatch</h1>
     <p>Find the perfect movie for your mood</p>
 
-    <!-- Mood Selector -->
-    <div id="moodSelector">
-      <button class="mood-btn" data-genre="35">😄 Happy</button>
-      <button class="mood-btn" data-genre="18">😢 Sad</button>
-      <button class="mood-btn" data-genre="28">⚡ Thrilled</button>
-      <button class="mood-btn" data-genre="10749">💕 Romantic</button>
-      <button class="mood-btn" data-genre="27">😱 Scared</button>
-      <button class="mood-btn" data-genre="12">🌍 Adventurous</button>
-    </div>
+    <div class="header-controls">
+      <!-- Top Bar: Moods & Theme -->
+      <div class="top-bar">
+        <div id="moodSelector">
+          <button class="mood-btn" data-genre="35">😄 Happy</button>
+          <button class="mood-btn" data-genre="18">😢 Sad</button>
+          <button class="mood-btn" data-genre="28">⚡ Thrilled</button>
+          <button class="mood-btn" data-genre="10749">💕 Romantic</button>
+          <button class="mood-btn" data-genre="27">😱 Scared</button>
+          <button class="mood-btn" data-genre="12">🌍 Adventurous</button>
+        </div>
+        <button id="themeToggle" class="theme-toggle" title="Toggle Theme">🌗</button>
+      </div>
 
-    <!-- Search & Filters -->
-    <input type="text" id="searchInput" placeholder="Search movies..." />
-    <select id="sortBy">
-      <option value="popularity.desc">Most Popular</option>
-      <option value="vote_average.desc">Top Rated</option>
-      <option value="release_date.desc">Newest</option>
-    </select>
+      <!-- Filter Bar: Search, Sort, Favorites -->
+      <div class="filter-bar">
+        <input type="text" id="searchInput" placeholder="Search movies by title..." />
+        
+        <select id="sortBy">
+          <option value="popularity.desc">Most Popular</option>
+          <option value="vote_average.desc">Top Rated</option>
+          <option value="release_date.desc">Newest</option>
+        </select>
+
+        <button id="favOnlyBtn" class="fav-only-btn">
+          <span>❤️</span> Favorites Only
+        </button>
+      </div>
+    </div>
   </header>
 
   <main id="moviesGrid"></main>
   <script src="script.js"></script>
 </body>
 </html>
+

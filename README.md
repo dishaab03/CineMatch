@@ -1,83 +1,59 @@
 # 🎬 CineMatch
 
 A mood-based movie discovery web app powered by the TMDB API.
-Tell CineMatch how you're feeling — it finds movies that match your mood instantly.
-
----
+Tell CineMatch how you're feeling — it finds the perfect movie for you.
 
 ## 🎯 Purpose
+CineMatch helps users discover movies based on their current mood.
+Instead of endlessly scrolling, users pick a mood (Happy, Sad, Thrilled,
+Romantic, etc.) and get curated movie recommendations with instant client-side
+filtering and sorting options.
 
-CineMatch simplifies movie discovery by letting users explore films based on their current mood.
-Instead of endlessly scrolling, users can select a mood or search directly to get relevant movie suggestions.
+## 🌟 Milestone 3 Upgrades
+This project has been upgraded to **Milestone 3** with the following enhancements:
 
----
+- **🚀 Client-Side Processing**: All searching, filtering, and sorting now happen instantly on the client using JavaScript Higher-Order Functions (`filter`, `map`, `sort`). Bulk loading ensures no API lag during interaction.
+- **🎨 Soft-Cyber UI**: A completely redesigned, modern interface featuring glassmorphism, animated mesh backgrounds, and premium typography (Outfit font).
+- **❤️ Favourites System**: Users can now save their favourite movies to a personal list that persists via `localStorage`.
+- **🌗 Dark/Light Mode**: Full theme support with persistence, allowing users to switch between sleek dark and clean light modes.
+- **✍️ Humanized Code**: The underlying logic has been documented with informal, "human" comments explaining the *why* behind the code.
 
 ## 🌐 API Used
+- **The Movie Database (TMDB) API** — https://www.themoviedb.org/documentation/api
+- Provides movie data including titles, posters, ratings, genres,
+  and release dates.
 
-* **The Movie Database (TMDB) API**
-* Provides movie data including titles, posters, ratings, and release dates.
+## ✨ Features
+- 🎭 Mood-based movie recommendations (Happy, Sad, Adventurous, Romantic...)
+- 🔍 Client-side search by title (instant & case-insensitive)
+- 🎬 Instant genre filtering without API calls
+- ⭐ Dynamic sorting by popularity, rating, or release date
+- 🔖 Save favourite movies to a personal watchlist (localStorage)
+- 🌗 Persistent dark and light mode themes
 
----
-
-## ✨ Features (Implemented)
-
-* 🎭 Mood-based movie recommendations (Happy, Sad, Thrilled, Romantic, etc.)
-* 🔍 Search movies by title
-* 🎬 Filter movies using mood (genre-based mapping)
-* ⭐ Sort movies by popularity, rating, or release date
-* 📱 Responsive UI (works on mobile, tablet, desktop)
-* ⚡ Dynamic API integration using `fetch` and async/await
-
----
-
-## 🚧 Planned Improvements
-
-* 📄 Movie detail view (cast, synopsis, trailer)
-* 🔖 Watchlist feature using localStorage
-* 🎨 Improved loading and error UI
-
----
-
-## 🛠 Technologies Used
-
-* HTML5
-* CSS3 (Responsive Design)
-* Vanilla JavaScript (ES6+)
-* TMDB REST API
-
----
+## 🛠 Technologies
+- HTML5, CSS3 (CSS Variables for theming)
+- Vanilla JavaScript (ES6+ HOFs: `filter`, `map`, `sort`, `flatMap`)
+- TMDB REST API (fetch / async-await)
+- localStorage for persistence
 
 ## 🚀 How to Run
-
 1. Clone this repository:
-
 ```bash
-git clone https://github.com/dishaab03/cinematch.git
+   git clone https://github.com/dishaab03/CineMatch.git
 ```
-
-2. Open the project folder
-
-3. Run using any of the following:
-
-* Double-click `index.html`
-* OR use VS Code Live Server (recommended)
-
-4. Add your TMDB API key in `script.js`
-
----
+2. Open `index.html` in your browser — no build step needed.
+3. The app comes pre-configured with a TMDB API key in `script.js`.
 
 ## 📁 Project Structure
-
 ```
 cinematch/
-├── index.html      # UI structure
-├── style.css       # Styling and responsiveness
-├── script.js       # API logic and dynamic rendering
-└── README.md       # Documentation
+├── index.html      # Main UI structure & Font imports
+├── style.css       # Soft-Cyber UI & Glassmorphism styles
+├── script.js       # Core logic (Client-side HOFs & Persistence)
+└── README.md       # Project documentation (Updated for M3)
 ```
 
----
-
 ## 📌 Current Status
+**Milestone 3 — Completed.** The app is now a high-performance, interactive, and beautifully designed movie discovery platform.
 
-Milestone 2 — API integration and dynamic rendering completed.
