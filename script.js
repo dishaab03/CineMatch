@@ -213,6 +213,24 @@ function attachEventListeners() {
       handleFavoriteToggle(favBtn.dataset.favId);
     }
   });
+
+  // Smart Sticky Navbar Logic
+  let lastScrollY = window.scrollY;
+  const header = document.querySelector('header');
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    
+    // Hide if scrolling down and not at the very top
+    if (currentScrollY > lastScrollY && currentScrollY > 80) {
+      header.classList.add('header-hidden');
+    } else {
+      // Show if scrolling up
+      header.classList.remove('header-hidden');
+    }
+    
+    lastScrollY = currentScrollY;
+  }, { passive: true });
 }
 
 // Kick it off!
